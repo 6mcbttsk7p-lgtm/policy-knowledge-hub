@@ -317,7 +317,7 @@ function HomePage({ onOpenPolicy }: { onOpenPolicy: () => void }) {
                 {items.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-[14px] border border-slate-200 bg-white p-4 shadow-[0_2px_8px_rgba(15,23,42,0.04)]"
+                    className="flex h-full flex-col rounded-[14px] border border-slate-200 bg-white p-4 shadow-[0_2px_8px_rgba(15,23,42,0.04)]"
                   >
                     <div className="mb-3 text-xs font-medium text-orange-500">{item.badge}</div>
                     <button
@@ -334,7 +334,7 @@ function HomePage({ onOpenPolicy }: { onOpenPolicy: () => void }) {
                     </div>
                     <button
                       onClick={item.active ? onOpenPolicy : undefined}
-                      className="w-full rounded-[8px] bg-[#f58a1f] px-4 py-3 text-sm font-semibold text-white"
+                      className="mt-auto w-full rounded-[8px] bg-[#f58a1f] px-4 py-3 text-sm font-semibold text-white"
                     >
                       Subscribe
                     </button>
